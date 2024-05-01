@@ -1,0 +1,35 @@
+GET http://127.0.0.1:8000/cars
+
+###
+
+GET http://127.0.0.1:8000/cars/1
+
+###
+
+DELETE http://127.0.0.1:8000/cars/2
+
+###
+POST http://127.0.0.1:8000/cars
+Content-Type: application/json
+
+{
+"make": "Toyota",
+"model": "Sienna",
+"year": 2004,
+"color": "light blue",
+"price": 30000.0
+}
+
+###
+
+PUT http://127.0.0.1:8000/cars/3
+Content-Type: application/json
+
+{
+"make": "Toyota",
+"model": "Sienna",
+"year": 2024,
+"color": "light blue",
+"price": 30000.0,
+"id": 3
+}

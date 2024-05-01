@@ -1,0 +1,24 @@
+
+
+GET http://127.0.0.1:8000/colors
+
+###
+
+GET http://127.0.0.1:8000/colors/1
+
+###
+
+DELETE http://127.0.0.1:8000/colors/10
+
+###
+POST http://127.0.0.1:8000/colors
+Content-Type: application/json
+
+{ "name": "purple", "hex_code": "FF00FF" }
+
+###
+
+PUT http://127.0.0.1:8000/colors/-1
+Content-Type: application/json
+
+{ "id": 100, "name": "purple", "hex_code": "FF00FF" }
